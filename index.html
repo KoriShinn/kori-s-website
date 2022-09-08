@@ -1,501 +1,542 @@
 <!DOCTYPE html>
-<html lang="CN-ch">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kori's Website</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- 脚本 -->
-    <script defer src="./js/main.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kori's website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="./css/iconfont.ttf">
+  <link rel="stylesheet" href="./css/iconfont.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <!-- 回到头部按钮 -->
-    <div class="scrollToTop-btn flex-center">
-        <i class="iconfont icon-xiangshang4"></i>
+
+
+
+
+  <!-- 返回顶部 -->
+  <div class="scrollToTop flex-center">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+
+
+
+
+
+  <!-- 明暗切换 -->
+  <div class="theme-btn flex-center">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+  </div>
+
+
+
+
+
+  <!-- 头部 -->
+  <header>
+    <div>
+      <div class="nav-bar">
+        <a href="#" class="logo">Kori</a>
+        <div class="navigation">
+          <div class="nav-items">
+            <div class="nav-close-btn"></div>
+            <a href="#home" class="active">主页</a>
+            <a href="#about">关于</a>
+            <a href="#skills">技能</a>
+            <a href="#services">服务</a>
+            <a href="#works">作品</a>
+            <a href="#contact">联系</a>
+          </div>
+        </div>
+        <div class="nav-menu-btn"></div>
+      </div>
     </div>
+  </header>
 
-    <!-- 黑暗/光明模式按钮 -->
-    <div class="theme-btn flex-center">
-        <i class="iconfont icon-yueliang"></i>
-        <i class="iconfont icon-taiyang"></i>
+
+
+
+
+  <!-- 主页部分 -->
+  <section class="home flex-center" id="home">
+    <div class="home-container">
+      <div class="home-header">
+        <div class="media-icons">
+          <a href="https://github.com/KoriShinn" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://blog.csdn.net/m0_63091773?spm=1000.2115.3001.5343"><i class="iconfont icon-csdn"></i></a>
+          <a href="https://gitee.com/coreyshin"><i class="iconfont icon-gitee-fill-round"></i></a>
+        </div>
+      </div>
+      <div class="info">
+        <h2>Hellow I'am Kori</h2>
+        <h3>前端开发者</h3>
+        <p>励志学习前端前沿技术，开发优秀项目</p>
+        <a href="#contact" class="btn">联系我<i class="fas fa-arrow-circle-right"></i></a>
+      </div>
+
     </div>
+    <a href="#about" class="scroll-down">Scroll Down
+      <i class="fas fa-arrow-down"></i>
+    </a>
+  </section>
 
-    <!-- 头部导航及logo -->
-    <header>
-        <div class="nav-bar">
-            <a href="#" class="logo">Kori</a>
-            <div class="navigation">
-                <div class="nav-items">
-                    <div class="nav-close-btn">
 
-                    </div>
-                    <a class="active" href="#home">主页</a>
-                    <a href="#about">关于</a>
-                    <a href="#skills">技能</a>
-                    <a href="#services">服务</a>
-                    <a href="#portfolio">作品</a>
-                    <a href="#contact">联系</a>
-                </div>
-            </div>
-            <div class="nav-menu-btn"></div>
+
+
+  <!-- 关于部分 -->
+  <section class="about section" id="about">
+    <div class="container flex-center">
+      <h1 class="section-title-01">关于</h1>
+      <h2 class="section-title-02">关于</h2>
+      <div class="content flex-center">
+        <div class="about-info">
+          <div class="description">
+            <h3>I'm Kori</h3>
+            <h4>一位就读于<span>江苏理工学院</span>的<span>前端开发者</span></h4>
+            <p>开发过电商后台管理系统，个人网站，对Vue技术很感兴趣</p>
+          </div>
+          <ul class="profession-list">
+            <li class="list-item">
+              <h3>11</h3>
+              <span>个月<br>开发经验</span>
+            </li>
+            <li class="list-item">
+              <h3>2</h3>
+              <span>成功的<br>作品</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn">联系我<i class="fa-regular fa-paper-plane"></i></a>
         </div>
-    </header>
-    <!-- 首页 -->
-    <section class="home flex-center" id="home">
-        <div class="home-container">
-            <div class="home-header">
-                <div class="media-icons">
-                    <a href="https://blog.csdn.net/m0_63091773?type=blog" target="_blank" title="CSDN"><i class="fab iconfont">&#xe638;</i></a>
-                    <a href="javascript:void(0);""><i class="fab iconfont">&#xe600;</i></a>
-                    <a href="https://gitee.com/coreyshin" target="_blank" title="Gitee"><i class="fab iconfont">&#xe60c;</i></a>
-                </div>
-                <div class="home-img">
-                    <img src="" alt="">
-                </div>
-            </div>
-           
-            <div class="info">
-                <h2>Hellow I'am Kori</h2>
-                <h3>前端开发者</h3>
-                <p>励志学习前端前沿技术，开发优秀项目</p>
-                <a href="" class="btn">联系我 <i class="iconfont icon-xiangyou3fill"></i></a>
-            </div>
-           
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 技能 -->
+  <section class="skills section" id="skills">
+    <div class="container flex-center">
+      <h1 class="section-title-01">技能</h1>
+      <h2 class="section-title-02">技能</h2>
+      <div class="content">
+        <div class="skills-description">
+          <h3>教育 & 技能</h3>
+          <p>近一年来，我在自主学习了Vue全家桶开发，并完成项目。</p>
         </div>
-        <a href="#about" class="scroll-down">Scroll Down <i class="iconfont">&#xe773;</i></a>
-    </section>
-
-    <!-- 关于 -->
-    <section class="about section" id="about">
-        <div class="container flex-center">
-            <h1 class="section-title-01">关于</h1>
-            <h2 class="section-title-02">关于</h2>
-            <div class="content flex-center">
-                <div class="about-img">
-                    <img src="" alt="">
+        <div class="skills-info education-all">
+          <div class="education">
+            <h4><label>教育</label></h4>
+            <ul class="edu-list">
+              <li class="item">
+                <p><span>本科生</span></p>
+                - 江苏理工学院, 常州
+              </li>
+              <li class="item">
+                <p><span>其他自学</span></p>
+                - 网络、书籍自学, 任意地点
+              </li>
+            </ul>
+          </div>
+          <div class="education">
+            <h4><label>技能</label></h4>
+            <ul class="bars">
+              <li class="bar">
+                <div class="info">
+                  <span>HTML</span>
+                  <span>95%</span>
                 </div>
-                <div class="about-info">
-                    <div class="description">
-                        <h3>I'm Kori</h3>
-                        <h4>一位就读于<span>江苏理工学院</span>的<span>前端开发者</span></h4>
-                        <p>开发过电商后台管理系统，微信小程序，对Vue技术很感兴趣</p>
-                    </div>
-                    <ui class="professional-list">
-                        <li class="list-item">
-                            <h3>4</h3>
-                            <span>个月<br>开发经验</span>
-                        </li>
-                        
-                        <li class="list-item">
-                            <h3>2</h3>
-                            <span>成功的<br>作品</span>
-                        </li>
-                    </ui>
-                    <a href="" class="btn">下载简历<i class="iconfont">&#xe7bb;</i></a>
+                <div class="line HTML"></div>
+              </li>
+              <li class="bar">
+                <div class="info">
+                  <span>CSS</span>
+                  <span>85%</span>
                 </div>
-            </div>
+                <div class="line CSS"></div>
+              </li>
+              <li class="bar">
+                <div class="info">
+                  <span>Javascript</span>
+                  <span>85%</span>
+                </div>
+                <div class="line Javascript"></div>
+              </li>
+              <li class="bar">
+                <div class="info">
+                  <span>Vue2</span>
+                  <span>80%</span>
+                </div>
+                <div class="line Vue2"></div>
+              </li>
+              <li class="bar">
+                <div class="info">
+                  <span>Node.js</span>
+                  <span>75%</span>
+                </div>
+                <div class="line Node"></div>
+              </li>
+              <li class="bar">
+                <div class="info">
+                  <span>jQuery</span>
+                  <span>85%</span>
+                </div>
+                <div class="line jQuery"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="education">
+            <h4><label>荣誉</label></h4>
+            <ul class="edu-list">
+              <li class="item">
+                <span class="year">2021</span>
+                <p><span>校级文明学生</span></p>
+              </li>
+              <li class="item">
+                <span class="year">2021</span>
+                <p><span>技能大赛三等奖</span></p>
+              </li>
+              <li class="item">
+                <span class="year">2021</span>
+                <p><span>技能树征文献计献策奖 </span>- CSDN学习论坛</p>
+              </li>
+            </ul>
+          </div>
         </div>
-    </section>
-
-    <!-- 技能 -->
-    <section class="skills section" id="skills">
-        <div class="container flex-center">
-            <h1 class="section-title-01">技能</h1>
-            <h2 class="section-title-02">技能</h2>
-            <div class="content">
-                <!-- 教育和技能 -->
-                <div class="skills-description">
-                    <h3>教育 & 技能</h3>
-                    <p>近一年来，我在自主学习了Vue2和微信小程序的开发，并完成项目。</p>
-                </div>
-                <div class="skills-info education-all">
-                    <div class="education">
-                        <h4><label>教育</label></h4>
-                        <ul class="edu-list">
-                            <li class="item">
-                                <p><span>本科生</span> - 江苏理工学院, 常州</p>
-                            </li>
-
-                            <li class="item">
-                                <span class="year">其他</span>
-                                <p><span>自学</span> - 网络、书籍自学, 任意地点</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="education">
-                        <h4><label>技能</label></h4>
-                        <ul class="bars">
-                            <li class="bar">
-                                <div class="info">
-                                    <span>HTML</span>
-                                    <span>95%</span>
-                                </div>
-                                <!-- 进度条 -->
-                                <div class="line html"></div>
-                            </li>
-                            <li class="bar">
-                                <div class="info">
-                                    <span>CSS</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="line css"></div>
-                            </li>
-                            <li class="bar">
-                                <div class="info">
-                                    <span>Javascript</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="line javascript"></div>
-                            </li>
-                            <li class="bar">
-                                <div class="info">
-                                    <span>Vue2</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="line vue"></div>
-                            </li>
-                            <li class="bar">
-                                <div class="info">
-                                    <span>Element UI</span>
-                                    <span>75%</span>
-                                </div>
-                                <div class="line elementui"></div>
-                            </li>
-                            <li class="bar">
-                                <div class="info">
-                                    <span>微信小程序</span>
-                                    <span>70%</span>
-                                </div>
-                                <div class="line weixin"></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="education">
-                        <h4><label>获奖</label></h4>
-                        <ul class="edu-list">
-                            <li class="item">
-                                <span class="year">2021</span>
-                                <p><span>系部文明学生</span> </p>
-                            </li>
-                            <li class="item">
-                              <span class="year">2021</span>
-                              <p><span>技能大赛三等奖</span></p>
-                          </li>
-                            <li class="item">
-                                <span class="year">2021</span>
-                                <p><span>技能树征文献计献策奖</span> - CSDN学习论坛</p>
-                            </li>
-                            
-
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- 工作和经历 -->
-                <div class="skills-description">
-                    <h3>经历</h3>
-                </div>
-                <div class="skills-info">
-                    <div class="experience-card">
-                        <div class="upper">
-                            <h3>实训小组负责人</h3>
-                            <h5>校内学习</h5>
-                        </div>
-                        <div class="hr"></div>
-                        <h4><label>实训</label></h4>
-                        <p>多次在实训小组中担任负责人，组织并帮助同学完成学习任务</p>
-                    </div>
-                    <div class="experience-card">
-                        <div class="upper">
-                            <h3>专业课</h3>
-                            <h5>校内学习</h5>
-                        </div>
-                        <div class="hr"></div>
-                        <h4><label>成绩</label></h4>
-                        <p> 专业课成绩优异，成绩名列前茅</p>
-                    </div>
-                    <div class="experience-card">
-                        <div class="upper">
-                            <h3>独立前端开发</h3>
-                            <h5>学习之外</h5>
-                        </div>
-                        <div class="hr"></div>
-                        <h4><label>前端</label></h4>
-                        <p>坚持学习前端知识，开发完成两个前端项目</p>
-                    </div>
-                </div>
-            </div>
+        <div class="skills-description">
+          <h3>经历</h3>
         </div>
-    </section>
-    <!-- 作品 -->
-    <section class="services section" id="services">
-        <div class="container flex-center">
-            <h1 class="section-title-01">服务</h1>
-            <h2 class="section-title-02">服务</h2>
-            <div class="content">
-                <div class="services-description">
-                    <h3>我提供什么</h3>
-                </div>
-                <ul class="service-list">
-                    <li class="service-container">
-                        <div class="service-card">
-                            <i class="iconfont icon-shejiguifan"></i>
-                            <h3>前端开发</h3>
-                            <div class="learn-more-btn">知道更多 <i class="iconfont icon-xiangyou3fill"></i></div>
-                        </div>
-                        <div class="service-modal flex-center">
-                            <div class="service-modal-body">
-                                <i class=" modal-close-btn iconfont icon-guanbi"></i>
-                                <h3>前端开发</h3>
-                                <h4>什么是前端开发？</h4>
-                                <p>前端开发是创建WEB页面或APP等前端界面呈现给用户的过程，通过HTML，CSS及JavaScript以及衍生出来的各种技术、框架、解决方案，来实现互联网产品的用户界面交互。
-                                </p>
-                                <h4>我能提供</h4>
-                                <ul>
-                                    <li>个人网站开发</li>
-                                    <li>后台管理系统开发</li>
-                                    <li>小程序开发</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="service-container">
-                        <div class="service-card">
-                            <i class="iconfont icon-shebeikaifa"></i>
-                            <h3>后端开发</h3>
-                            <div class="learn-more-btn">知道更多 <i class="iconfont icon-xiangyou3fill"></i></div>
-                        </div>
-                        <div class="service-modal flex-center">
-                            <div class="service-modal-body">
-                                <i class=" modal-close-btn iconfont icon-guanbi"></i>
-                                <h3>后端开发</h3>
-                                <h4>什么是后端开发？</h4>
-                                <p>后端指的是运行在后台并且控制着前端的内容，它主要负责程序设计架构思想，管理数据库等。后端更多的是应用到数据库并且进行交互以处理相应的业务逻辑。它需要考虑的是如何实现功能、数据的存取、平台的稳定性与性能等方面。
-                                </p>
-                                <h4>我已掌握</h4>
-                                <ul>
-                                    <li>利用Node.js进行开发</li>
-                                    <li>使用MySQL数据库</li>
-                                    <li正在学习Springboot< /li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="service-container">
-                        <div class="service-card">
-                            <i class="iconfont icon-gongju"></i>
-                            <h3>工具设计</h3>
-                            <div class="learn-more-btn">知道更多 <i class="iconfont icon-xiangyou3fill"></i></div>
-                        </div>
-                        <div class="service-modal flex-center">
-                            <div class="service-modal-body">
-                                <i class=" modal-close-btn iconfont icon-guanbi"></i>
-                                <h3>效率开发</h3>
-                                <h4>什么是效率开发？</h4>
-                                <p>利用已有技术、第三方组件库、第三方依赖或其他自动化工具进行快速开发，如：网页脚本、ElementI-UI、Webpack、数据库可视化工具Navicat、Alfred等，提高办公效率。</p>
-                                <h4>我能使用</h4>
-                                <ul>
-                                    <li>桌面工具</li>
-                                    <li>组件库</li>
-                                    <li>小程序工具开发</li>
-                                    <li>打包工具</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="service-container">
-                        <div class="service-card">
-                            <i class="iconfont icon-24"></i>
-                            <h3>内容写作</h3>
-                            <div class="learn-more-btn">知道更多 <i class="iconfont icon-xiangyou3fill"></i></div>
-                        </div>
-                        <div class="service-modal flex-center">
-                            <div class="service-modal-body">
-                                <i class=" modal-close-btn iconfont icon-guanbi"></i>
-                                <h3>内容写作</h3>
-                                <h4>什么是内容写作？</h4>
-                                <p>内容写作是规划、编写和编辑web内容的过程。</p>
-                                <h4>我能提供</h4>
-                                <ul>
-                                    <li>前端文档编写</li>
-                                    <li>网站博客写作</li>
-                                    <li>社交媒体内容</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- 作品 -->
-    <section class="portfolio section" id="portfolio">
-        <div class="container flex-center">
-            <h1 class="section-title-01">作品</h1>
-            <h2 class="section-title-02">作品</h2>
-            <div class="content">
-                <div class="portfolio-list">
-                    <div class="img-card-containter">
-                        <div class="img-card">
-                            <div class="overlay"></div>
-                            <div class="info">
-                                <h3>Vue2 开发</h3>
-                                <span>电商后台管理系统</span>
-                            </div>
-                            <img src="" alt="">
-                        </div>
-                        <div class="portfolio-model flex-center">
-                            <div class="portfolio-model-body">
-                                <i class="portfolio-close-btn iconfont icon-guanbi"></i>
-                                <h3>Web 设计</h3>
-                                <img src="" alt="">
-                                <p>针对在售商品数据的价格、数量、描述等进行编辑，上架下架商品以及对管理人员进行权限设置</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="img-card-containter">
-                        <div class="img-card">
-                            <div class="overlay"></div>
-                            <div class="info">
-                                <h3>小程序 设计</h3>
-                                <span>本地生活</span>
-                            </div>
-                            <img src="" alt="">
-                        </div>
-                        <div class="portfolio-model flex-center">
-                            <div class="portfolio-model-body">
-                                <i class="portfolio-close-btn iconfont icon-guanbi"></i>
-                                <h3>小程序 设计</h3>
-                                <img src="" alt="">
-                                <p>开发中</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    
-
-                </div>
-            </div>
-        </div>
-
-        <!-- 聊聊 -->
-        <div class="get-in-touch sub-section">
-            <div class="containter">
-                <div class="content flex-center">
-                    <div class="content-card flex-center">
-                        <div class="title">
-                            <h4>让我们聊聊</h4>
-                            <h3>关于你</h3>
-                            <h2>下一个作品</h2>
-                        </div>
-                        <div class="contact-btn">
-                            <a href="#contact" class="btn">联系我<i class="iconfont icon-fasong"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-
-    <!-- 联系 -->
-    <section class="contact section" id="contact">
-        <div class="container flex-center">
-            <h1 class="section-title-01">联系</h1>
-            <h2 class="section-title-02">联系</h2>
-            <div class="content">
-                <div class="contact-left">
-                    <h2>欢迎您联系我</h2>
-                    <ul class="contact-list">
-                        <li>
-                            <h3 class="item-title"> <i class="iconfont icon-qq"></i> QQ</h3>
-                            <span>1723895562</span>
-                        </li>
-                        <li>
-                            <h3 class="item-title"><i class="iconfont icon-dianhua"></i>电话</h3>
-                            <span>15716110021</span>
-                        </li>
-                        <li>
-                            <h3 class="item-title"><i class="iconfont icon-youjian"></i>电子邮件</h3>
-                            <span>Gmail Email: &#8195;<a href="mailto:koricrash@gmail.com">koricrash@gmail.com</a></span><br><br>
-                            <span>QQ Email: &#8195;&#8195;<a href="mailto:1723895562@qq.com">1723895562@qq.com</a></span>
-                            
-
-                        </li>
-                        <li>
-                            <h3 class="item-title"><i class="iconfont icon-dizhi"></i>地址</h3>
-                            <span>江苏省常州市武进区</span>
-                        </li>
-                    </ul>
-                </div>
-
-
-                <div class="contact-right">
-                    <p>我永远期待和你一起商榷<br><span>网站设计和合作友谊</span></p>
-                    <form action="" class="contact-form">
-                        <div class="first-row"> 
-                            <input type="text" placeholder="名字">
-                        </div>
-                        <div class="second-row">
-                            <input type="email" placeholder="邮箱">
-                            <input type="text" placeholder="标题">
-                        </div>
-                        <div class="third-row">
-                            <textarea name="message" id="" placeholder="信息" rows="7"></textarea>
-                        </div>
-                        <button class="btn" type="button">发送信息 <i class="iconfont icon-fasong"></i></button>
-                    </form>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- 页脚 -->
-    <footer>
-        <div class="footer-container">
-            <div class="about group">
-                <h2>Kori</h2>
-                <p>前端开发者</p>
-                <a href="#about">关于我</a>
+        <div class="skills-info">
+          <div class="experience-card">
+            <div class="upper">
+              <h3>实训小组负责人</h3>
+              <h5>校内学习</h5>
             </div>
             <div class="hr"></div>
-            <div class="info group">
-                <h3>更多</h3>
-                <ul>
-                    <li><a href="#skills">技能</a></li>
-                    <li><a href="#services">服务</a></li>
-                    <li><a href="#portfolio">作品</a></li>
-                    <li><a href="#contact">联系</a></li>
-                </ul>
+            <h4><label>实训</label></h4>
+            <p>多次在实训小组中担任负责人，组织并帮助同学完成学习任务</p>
+          </div>
+          <div class="experience-card">
+            <div class="upper">
+              <h3>专业课</h3>
+              <h5>校内学习</h5>
             </div>
             <div class="hr"></div>
-            <div class="follow group">
-                <h3>关注</h3>
-                <ul>
-                    <li><a href="https://blog.csdn.net/m0_63091773?type=blog" target="_blank" title="CSDN"><i
-                                class="fab iconfont">&#xe638;</i></a></li>
-                    <li><a href="javascript:void(0);"><i
-                                class="fab iconfont">&#xe600;</i></a></li>
-                    <li><a href="https://gitee.com/coreyshin" target="_blank" title="Gitee"><i class="fab iconfont">&#xe60c;</i></a>
-                    </li>
-                </ul>
+            <h4><label>成绩</label></h4>
+            <p>专业课成绩优异，成绩名列前茅</p>
+          </div>
+          <div class="experience-card">
+            <div class="upper">
+              <h3>独立前端开发</h3>
+              <h5>学习之外</h5>
             </div>
+            <div class="hr"></div>
+            <h4><label>前端</label></h4>
+            <p>坚持学习前端知识，开发完成两个前端项目</p>
+          </div>
         </div>
-        <div class="footer-copyright group">
-            <p>© 2022 by Kori. </p>
-        </div>
-    </footer>
+      </div>
     </div>
+  </section>
 
+
+  <!-- 服务 -->
+  <section class="services section" id="services">
+    <div class="container flex-center">
+      <h1 class="section-title-01">服务</h1>
+      <h2 class="section-title-02">服务</h2>
+      <div class="content">
+        <div class="service-description">
+          <h3>我能提供什么</h3>
+        </div>
+        <ul class="service-list">
+          <!-- 前端开发 -->
+          <li class="service-container">
+            <div class="service-card">
+              <i class="fas fa-pencil-ruler"></i>
+              <h3>前端开发</h3>
+              <div class="learn-more-btn">知道更多<i class="fa-solid fa-circle-chevron-right"></i></div>
+            </div>
+            <div class="service-modal flex-center">
+              <div class="service-modal-body">
+                <i class="fas fa-times modal-close-btn"></i>
+                <h3>前端开发</h3>
+                <h4>什么是前端开发？</h4>
+                <p>前端开发是创建WEB页面或APP等前端界面呈现给用户的过程，通过HTML，CSS及JavaScript以及衍生出来的各种技术、框架、解决方案，来实现互联网产品的用户界面交互。</p>
+                <h4>我能提供</h4>
+                <ul>
+                  <li><i class="fas fa-check-circle"></i> 个人网站开发</li>
+                  <li><i class="fas fa-check-circle"></i> 后台管理系统开发</li>
+                  <li><i class="fas fa-check-circle"></i> etc...</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- 后端开发 -->
+          <li class="service-container">
+            <div class="service-card">
+              <i class="fa-regular fa-keyboard"></i>
+              <h3>后端开发</h3>
+              <div class="learn-more-btn">知道更多<i class="fa-solid fa-circle-chevron-right"></i></div>
+            </div>
+            <div class="service-modal flex-center">
+              <div class="service-modal-body">
+                <i class="fas fa-times modal-close-btn"></i>
+                <h3>后端开发</h3>
+                <h4>什么是后端开发？</h4>
+                <p>
+                  后端指的是运行在后台并且控制着前端的内容，它主要负责程序设计架构思想，管理数据库等。后端更多的是应用到数据库并且进行交互以处理相应的业务逻辑。它需要考虑的是如何实现功能、数据的存取、平台的稳定性与性能等方面。
+                </p>
+                <h4>我已学习</h4>
+                <ul>
+                  <li><i class="fas fa-check-circle"></i> 利用Node.js进行开发</li>
+                  <li><i class="fas fa-check-circle"></i> 使用MySQL数据库</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- 效率开发 -->
+          <li class="service-container">
+            <div class="service-card">
+              <i class="fa-solid fa-jet-fighter"></i>
+              <h3>效率开发</h3>
+              <div class="learn-more-btn">知道更多<i class="fa-solid fa-circle-chevron-right"></i></div>
+            </div>
+            <div class="service-modal flex-center">
+              <div class="service-modal-body">
+                <i class="fas fa-times modal-close-btn"></i>
+                <h3>效率开发</h3>
+                <h4>什么是效率开发？</h4>
+                <p>利用已有技术、第三方组件库、第三方依赖或其他自动化工具进行快速开发，如：网页脚本、ElementI-UI、Webpack、数据库可视化工具Navicat、mock、Alfred等，提高办公效率。</p>
+                <h4>我能使用</h4>
+                <ul>
+                  <li><i class="fas fa-check-circle"></i> 桌面工具</li>
+                  <li><i class="fas fa-check-circle"></i> 组件库</li>
+                  <li><i class="fas fa-check-circle"></i> 打包工具</li>
+                  <li><i class="fas fa-check-circle"></i> mock工具</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- 内容写作 -->
+          <li class="service-container">
+            <div class="service-card">
+              <i class="fa-solid fa-pencil"></i>
+              <h3>内容写作</h3>
+              <div class="learn-more-btn">知道更多<i class="fa-solid fa-circle-chevron-right"></i></div>
+            </div>
+            <div class="service-modal flex-center">
+              <div class="service-modal-body">
+                <i class="fas fa-times modal-close-btn"></i>
+                <h3>内容写作</h3>
+                <h4>什么是内容写作？</h4>
+                <p>内容写作是规划、编写和编辑web内容的过程。</p>
+                <h4>我能提供</h4>
+                <ul>
+                  <li><i class="fas fa-check-circle"></i> 前端文档编写</li>
+                  <li><i class="fas fa-check-circle"></i> 网站博客写作</li>
+                  <li><i class="fas fa-check-circle"></i> 社交媒体内容</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 作品 -->
+  <section class="works section" id="works">
+    <div class="container flex-center">
+      <h1 class="section-title-01">作品</h1>
+      <h2 class="section-title-02">作品</h2>
+      <div class="content">
+        <div class="works-list">
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>Vue2 开发</h3>
+                <span>电商后台管理系统</span>
+              </div>
+              <img src="./images/shop.png" alt="">
+            </div>
+            <div class="works-modal flex-center">
+              <div class="works-modal-body">
+                <i class="fas fa-times works-close-btn"></i>
+                <h3>电商后台管理系统</h3>
+                <img src=".//images/shopdown.png" alt="">
+                <p>针对在售商品数据的价格、数量、描述等进行编辑，上架下架商品以及对管理人员进行权限设置</p>
+              </div>
+            </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>Vue项目</h3>
+                <span>开发中</span>
+              </div>
+              <img src="./images/dev.png" alt="">
+            </div>
+            <div class="works-modal flex-center">
+              <div class="works-modal-body">
+                <i class="fas fa-times works-close-btn"></i>
+                <h3>Vue项目</h3>
+
+                <p>开发中...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- 保持联系 -->
+      <div class="get-in-touch sub-section">
+        <div class="container">
+          <div class="content flex-center">
+            <div class="contact-card flex-center">
+              <div class="title">
+                <h4>让我们聊聊</h4>
+                <h3>关于你</h3>
+                <h2>下一个作品</h2>
+              </div>
+              <div class="contact-btn">
+                <a href="#contact" class="btn">联系我<i class="fa-regular fa-paper-plane"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- 联系 -->
+  <section class="contact section" id="contact">
+    <div class="container flex-center">
+      <h1 class="section-title-01">联系</h1>
+      <h2 class="section-title-02">联系</h2>
+      <div class="content">
+        <div class="contact-left">
+          <h2>欢迎您联系我</h2>
+          <ul>
+            <li class="contact-list">
+              <h3 class="item-title">
+                <i class="fa-brands fa-weixin"></i>微信
+              </h3>
+              <span>kx205111</span>
+            </li>
+            <li class="contact-list">
+              <h3 class="item-title">
+                <i class="fa-solid fa-phone"></i>电话
+              </h3>
+              <span>15716110021</span>
+            </li>
+            <li class="contact-list">
+              <h3 class="item-title">
+                <i class="fa-solid fa-envelope"></i>电子邮件
+              </h3>
+              <span>Gmail Email:&emsp; <a href="mailto:koricrash@gmail.com">koricrash@gmail.com</a></span>
+              <br>
+              <br>
+              <span>QQ Email: &emsp;&emsp; <a href="mailto:1723895562@qq.com">1723895562@qq.com</a></span>
+            </li>
+            <li class="contact-list">
+              <h3 class="item-title">
+                <i class="fa-solid fa-location-dot"></i>地址
+              </h3>
+              <span>江苏省常州市武进区</span>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-right">
+          <p>期待和你一起商榷<br><span>网站设计和合作友谊</span></p>
+          <form action="" class="contact-form">
+            <div class="first-row">
+              <input type="text" placeholder="名字">
+            </div>
+            <div class="second-row">
+              <input type="text" placeholder="邮箱">
+              <input type="text" placeholder="标题">
+            </div>
+            <div class="third-row">
+              <textarea name="message" id="" rows="7" placeholder="信息"></textarea>
+            </div>
+            <button class="btn emitBtn">发送信息<i class="fa-regular fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="footer-container">
+      <div class="about group">
+        <h2>Kori</h2>
+        <p>前端开发者</p>
+        <a href="#about">关于我</a>
+      </div>
+      <div class="hr"></div>
+      <div class="info group">
+        <h3>更多</h3>
+        <ul>
+          <li><a href="#skills">技能</a></li>
+          <li><a href="#services">服务</a></li>
+          <li><a href="#works">作品</a></li>
+          <li><a href="#contact">联系</a></li>
+        </ul>
+      </div>
+      <div class="hr"></div>
+      <div class="follow group">
+        <h3>关注</h3>
+        <ul>
+          <li><a href="https://github.com/KoriShinn" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://blog.csdn.net/m0_63091773?spm=1000.2115.3001.5343"><i class="iconfont icon-csdn"></i></a>
+          </li>
+          <li><a href="https://gitee.com/coreyshin"><i class="iconfont icon-gitee-fill-round"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyright group">
+      <p>© 2022 by Kori.</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 额外的script -->
+  <script src="./js/main.js"></script>
 </body>
+<script>
+
+</script>
 
 </html>
